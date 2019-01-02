@@ -6,13 +6,11 @@ html(lang='es')
     link(type='text/css', href='./css/style.css', rel='stylesheet')
   body
     #cuerpo
-      form#form-login(action='./newproject', method='post', autocomplete='off')
+      form#form-login(action='./newgroup', method='post', autocomplete='off')
        
         p
           label Name:
-        input#usuario(name='project_name', type='text', placeholder='Proyect name', autofocus='', required='')
-        p
-          label Public:
-        input(type="checkbox" name="public")
+        input#usuario(name='group_name', type='text', placeholder='Group name', autofocus='', required='')
+        
         p#bot
           input#submit.boton(type='submit',  value='Create')

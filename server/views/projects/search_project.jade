@@ -1,0 +1,16 @@
+doctype html
+html(lang='es')
+  head
+    title Formulario
+    meta(charset='utf-8')
+    link(type='text/css', href='./css/style.css', rel='stylesheet')
+  body
+    #cuerpo
+      form#form-login(action='./searchp', method='post', autocomplete='off')
+       
+        p
+          label Buscador:
+        input#usuario(name='search_project', type='text', placeholder='Project name', autofocus='', required='')
+        
+        p#bot
+          input#submit.boton(type='submit',  value='Search')

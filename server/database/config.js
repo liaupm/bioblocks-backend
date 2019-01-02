@@ -1,3 +1,4 @@
+/*Database connection params */
 var config= {
     host: 'localhost',
     user:'root',

@@ -1,3 +1,4 @@
+/*Module to get the main page */
 module.exports = {
   
     
