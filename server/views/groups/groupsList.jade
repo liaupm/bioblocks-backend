@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    - for (var i = 0; i < names.length; ++i) {
+        li
+          a(href="./groups/" + ids[i])= "Add to " + names[i]
+    - }

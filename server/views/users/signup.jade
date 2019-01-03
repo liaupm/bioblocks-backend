@@ -1,0 +1,30 @@
+doctype html
+html(lang='es')
+  head
+    title Formulario
+    meta(charset='utf-8')
+    link(type='text/css', href='./css/style.css', rel='stylesheet')
+  body
+    #cuerpo
+      form#form-login(action='http://localhost:3000/auth/signup', method='post', autocomplete='off')
+       
+        p
+          label Full Name:
+        input#usuario(name='fullName', type='text', placeholder='Full Name', autofocus='', required='')
+        p
+        p
+          label Username:
+        input#usuario(name='username', type='text', placeholder='Username', autofocus='', required='')
+        p
+        p
+          label Password:
+        input#contrasenia(name='password', type='password', placeholder='Password', required='')
+        p
+        p
+          label Email: 
+        input#contrasenia(name='email', type='text', placeholder='Email', required='')
+        p#bot
+          input#submit.boton(type='submit',  value='Submit')
+    
+
+

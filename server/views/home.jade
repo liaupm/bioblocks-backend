@@ -1,0 +1,11 @@
+extends templates/default
+
+block content
+    h1= "Pagina de Inicio"
+    if isAuthenticated
+      p= "Bienvenido " + user.username
+      li
+        a(href='/project') My Projects 
+      li
+        a(href='/auth/logout') Logout
+

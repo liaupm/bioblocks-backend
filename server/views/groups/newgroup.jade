@@ -1,0 +1,16 @@
+doctype html
+html(lang='es')
+  head
+    title Formulario
+    meta(charset='utf-8')
+    link(type='text/css', href='./css/style.css', rel='stylesheet')
+  body
+    #cuerpo
+      form#form-login(action='./newgroup', method='post', autocomplete='off')
+       
+        p
+          label Name:
+        input#usuario(name='group_name', type='text', placeholder='Group name', autofocus='', required='')
+        
+        p#bot
+          input#submit.boton(type='submit',  value='Create')

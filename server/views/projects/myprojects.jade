@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    - for (var i = 0; i < projectList.length; ++i) {
+        li
+          a(href="/project/" + ids[i])=projectList[i]
+    - }
+        p
+        a(href="/newgroup") Create Group
+    
